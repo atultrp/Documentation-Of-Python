@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+    <link rel="stylesheet" href="CSS/styles.css"
+</head>
+<body>
+    <nav id="navbar">
+        <header>Python Documentation</header>
+        <ul>
+          <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+          <li><a class="nav-link" href="#Python-Syntax">Python Syntax</a></li>
+          <li><a class="nav-link" href="#Python-Comment">Python Comment</a></li>
+          <li><a class="nav-link" href="#Python-Variables">Python-Variables</a></li>
+          <li><a class="nav-link" href="#Python-Numbers">Python-Numbers</a></li>
+          <li><a class="nav-link" href="#Python-Strings">Python-Strings</a></li>
+          <li><a class="nav-link" href="#Python-Lists">Python-Lists</a></li>
+          <li><a class="nav-link" href="#Python-Tuples">Python-Tuples</a></li>
+          <li><a class="nav-link" href="#Python-Sets">Python-Sets</a></li>
+          <li><a class="nav-link" href="#Python-Dictionaries">Python-Dictionaries</a></li>
+          <li><a class="nav-link" href="#Python-If-Else">Python-If-Else</a></li>
+          <li><a class="nav-link" href="#Python-Loops">Python-Loops</a></li>
+          <li><a class="nav-link" href="#Python-Functions">Python-Functions</a></li>
+          <li><a class="nav-link" href="#Reference">Reference</a></li>
+          
+          
+        </ul>
+      </nav>
+      <main id="main-doc">
+        <section class="main-section" id="Introduction">
+          <header>What is Python?</header>
+          <article>
+            <p>
+                Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+            </p>
+      
+            <p>
+                It is used for:
+            </p>
+            <ul>
+              <li>
+                web development (server-side),
+              </li>
+              <li>
+                software development,
+              </li>
+              <li>
+                mathematics,
+              </li>
+              <li>
+                system scripting.
+              </li>
+            </ul>
+            <header>
+                What can Python do?
+            </header>
+            <ul>
+                <li>Python can be used on a server to create web applications.</li>
+                <li>Python can be used alongside software to create workflows.</li>
+                <li>Python can connect to database systems. It can also read and modify files.</li>
+                <li>Python can be used to handle big data and perform complex mathematics.</li>
+                <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+            </ul>
+            <header>Why Python?</header>
+            <ul>
+                <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+                <li>Python has a simple syntax similar to the English language.</li>
+                <li>Python has syntax that allows developers to write programs with fewer lines than some other programming languages.</li>
+                <li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.</li>
+                <li>Python can be treated in a procedural way, an object-oriented way or a functional way.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="main-section" id="Python-Syntax">
+            <header>Execute Python Syntax</header>
+            <article>
+                <p>
+                    As we learned in the previous page, Python syntax can be executed by writing directly in the Command Line:
+                </p>
+                <p>
+                   <code>print("Hello, World!")</code><br>
+                    Hello, World!
+                </p>
+                <header>
+                    Python Indentation
+                </header>
+                <p>
+                    Indentation refers to the spaces at the beginning of a code line.Where in other programming languages
+                    the indentation in code is for readability only, the indentation in Python is very important.
+                    Python uses indentation to indicate a block of code.
+                </p>
+                <p>
+                    Example<br>
+                    <code>
+                    if 5 > 2:<br>
+                      print("Five is greater than two!")</code>
+                </p>
+            </article>
+            </section>
+
+            <section class="main-section" id="Python-Comment">
+                <header>
+                    Python Comments
+                </header>
+                <article>
+                <p>
+                    Comments can be used to explain Python code.
+                    Comments can be used to make the code more readable.
+                    Comments can be used to prevent execution when testing code.
+                </p>
+                <header>
+                    Creating a Comment
+                </header>
+                <p>
+                    Comments starts with a #, and Python will ignore them:
+                </p>
+                <p>
+                    Example<br><code>
+                    #This is a comment<br>
+                    print("Hello, World!")<br></code>
+                </p>
+                <header>
+                    Multi Line Comments
+                </header>
+                <p>
+                    Python does not really have a syntax for multi line comments.
+                    To add a multiline comment you could insert a # for each line:<br>
+                    Example<br><code>
+                    #This is a comment<br>
+                    #written in<br>
+                    #more than just one line<br>
+                    print("Hello, World!")<br>
+                    Or, not quite as intended, you can use a multiline string.
+                    Since Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple quotes) in your code, and place your comment inside it:<br>
+                    Example<br>
+                    """<br>
+                    This is a comment<br>
+                    written in<br>
+                    more than just one line<br>
+                    """<br>
+                    print("Hello, World!")</code>
+                </p>
+                </article>
+            </section>
+
+            <section class="main-section" id="Python-Variables">
+                <header>
+                    Python variables
+                </header>
+                <article>
+                    <p>
+                        Variables are containers for storing data values.
+                    </p>
+                    <header>
+                        Creating Variables
+                    </header>
+                    <p>
+                        Python has no command for declaring a variable.
+                        A variable is created the moment you first assign a value to it.
+                    </p>
+                    <p>
+                        Example<br><code>
+                        x = 5<br>
+                        y = "John"<br>
+                        print(x)<br>
+                        print(y)</code>
+                    </p>
+                    <p>
+                        Variables do not need to be declared with any particular type, and can even change type after they have been set.
+                    </p>
+                    <p>
+                        Example<br><code>
+                        x = 4       # x is of type int<br>
+                        x = "Sally" # x is now of type str<br>
+                        print(x)<br></code>
+                    </p>
+                </article>
+            </section>
+
+            <section class="main-section" id="Python-Numbers" >
+                <header>
+                    Python Numbers
+                </header>
+                <article>
+                <p>There are three numeric types in Python:</p>
+                <ul>
+                    <li><code class="w3-codespan">int</code></li>
+                    <li><code class="w3-codespan">float</code></li>
+                    <li><code class="w3-codespan">complex</code></li>
+                </ul>
+                <p>Variables of numeric types are created when you assign a value to them:</p>
+                <p>
+                    Example<br><code>
+                    x = 1    # int<br>
+                    y = 2.8  # float<br>
+                    z = 1j   # complex</code>
+                </p>
+                <p>
+                    To verify the type of any object in Python, use the type() function:
+                </p>
+                <p>
+                    Example<br><code>
+                    print(type(x))<br>
+                    print(type(y))<br>
+                    print(type(z))</code>
+                </p>
+                </article>
+            </section>
+
+            <section class="main-section" id="Python-Strings">
+                <header>
+                    Python Strings
+                </header>
+                <article>
+                    <p>
+                        Strings in python are surrounded by either single quotation marks, or double quotation marks.<br>
+                        'hello' is the same as "hello".<br>
+                        You can display a string literal with the print() function:
+                    </p>
+                    <p>
+                        Example<br><code>print("Hello")<br>print('Hello')</code>
+                    </p>
+                    <header>
+                        Assign String to a Variable
+                    </header>
+                    <p>
+                        Assigning a string to a variable is done with the variable name followed by an equal sign and the string:<br>
+                        Example<br><code>a = "Hello"<br>print(a)</code>
+                    </p>
+                    <header>
+                        Multiline Strings
+                    </header>
+                    <p>
+                        You can assign a multiline string to a variable by using three quotes:<br>Example<br><code>
+                        You can use three double quotes:<br>
+                        a = """Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit,<br>sed do eiusmod tempor incididunt<br>ut labore et dolore magna aliqua."""<br>
+                        print(a)</code>
+                    </p>
+                    <header>
+                        Strings are Arrays
+                    </header>
+                    <p>
+                        Like many other popular programming languages, strings in Python are arrays of bytes representing unicode characters.<br>
+                        However, Python does not have a character data type, a single character is simply a string with a length of 1.<br>
+                        Square brackets can be used to access elements of the string.
+                    </p>
+                    <p>
+                        Example<br><code>Get the character at position 1 (remember that the first character has the position 0):<br>
+                        a = "Hello, World!"<br>print(a[1])</code>
+                    </p>
+                </article>
+            </section>
+
+            <section class="main-section" id="Python-Lists">
+                <header>
+                    Python Lists
+                </header>
+                <article>
+                <p>
+                    Lists are used to store multiple items in a single variable.<br>
+                    Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.<br>
+                    Lists are created using square brackets:<br>
+                    Example<br><code>Create a List:<br>thislist = ["apple", "banana", "cherry"]<br>print(thislist)</code>
+                </p>
+                <header>
+                    List Items
+                </header>
+                <p>
+                    List items are ordered, changeable, and allow duplicate values.
+                    List items are indexed, the first item has index [0], the second item has index [1] etc.
+                </p>
+                <header>
+                    Ordered
+                </header>
+                <p>
+                    When we say that lists are ordered, it means that the items have a defined order, and that order will not change.
+                    If you add new items to a list, the new items will be placed at the end of the list.
+                </p>
+                <header>
+                    Changeable
+                </header>
+                <p>
+                    The list is changeable, meaning that we can change, add, and remove items in a list after it has been created.
+                </p>
+                <header>
+                    Allow Duplicates
+                </header>
+                <p>
+                    Since lists are indexed, lists can have items with the same value:<br>
+                    Example<br><code>
+                    Lists allow duplicate values:<br>
+                    thislist = ["apple", "banana", "cherry", "apple", "cherry"]<br>print(thislist)</code>
+                </p>
+                <header>
+                    List Length
+                </header>
+                <p>
+                    To determine how many items a list has, use the len() function:<br>
+                    Example<br><code> the number of items in the list:<br>
+                    thislist = ["apple", "banana", "cherry"]<br>print(len(thislist))</code>
+                </p>
+            </article>
+            </section>
+
+            <section class="main-section" id="Python-Tuples">
+                <header>
+                    Python Tuples
+                </header>
+                <article>
+                    <p>
+                        Tuples are used to store multiple items in a single variable.<br>
+                        Tuple is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Set, and Dictionary, all with different qualities and usage.<br>
+                        A tuple is a collection which is ordered and unchangeable.<br>
+                        Tuples are written with round brackets.<br>
+                        Example<br>Create a Tuple:<br><code>
+                        thistuple = ("apple", "banana", "cherry")<br>
+                        print(thistuple)</code>
+                    </p>
+                    <header>Tuple Items</header>
+                    <p>
+                        Tuple items are ordered, unchangeable, and allow duplicate values.<br>
+                        Tuple items are indexed, the first item has index [0], the second item has index [1] etc.
+                    </p>
+                    <header>
+                        Ordered
+                    </header>
+                    <p>
+                        When we say that tuples are ordered, it means that the items have a defined order, and that order will not change.
+                    </p>
+                    <header>
+                        Unchangeable
+                    </header>
+                    <p>
+                        Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been created.
+                    </p>
+                    <header>
+                        Allow Duplicates
+                    </header>
+                    <p>
+                        Since tuple are indexed, tuples can have items with the same value:<br>
+                        Example<br>Tuples allow duplicate values:<br><code>
+                        thistuple = ("apple", "banana", "cherry", "apple", "cherry")<br>
+                        print(thistuple)</code>
+                    </p>
+                    <header>Tuple Length</header>
+                    <p>To determine how many items a tuple has, use the len() function:<br>
+                        Example<br><code>
+                        Print the number of items in the tuple:<br>                        
+                        thistuple = ("apple", "banana", "cherry")<br>
+                        print(len(thistuple))</code>
+                    </p>
+                </article>
+            </section>
+
+
+            <section class="main-section" id="Python-Sets">
+                <header>
+                    Python Sets
+                </header>
+                <article>
+                <p>Sets are used to store multiple items in a single variable.<br>
+                    Set is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Tuple, and Dictionary, all with different qualities and usage.<br>
+                    A set is a collection which is both unordered and unindexed.<br>                    
+                    Sets are written with curly brackets.<br>                    
+                    Example<br><code>
+                    Create a Set:<br>                    
+                    thisset = {"apple", "banana", "cherry"}<br>
+                    print(thisset)</p></code>
+                <header>
+                    Set Items
+                </header>
+                <p>
+                    Set items are unordered, unchangeable, and do not allow duplicate values.
+                </p>
+                <header>
+                    Unordered
+                </header>
+                <p>
+                    Unordered means that the items in a set do not have a defined order.<br>
+                    Set items can appear in a different order every time you use them, and cannot be referred to by index or key.
+                </p>
+                <header>
+                    Unchangeable
+                </header>
+                <p>
+                    Sets are unchangeable, meaning that we cannot change the items after the set has been created.<br>
+                    Once a set is created, you cannot change its items, but you can add new items.
+                </p>
+                <header>
+                    Duplicates Not Allowed
+                </header>
+                <p>Sets cannot have two items with the same value.<br>
+                    Example<br>
+                    Duplicate values will be ignored:<br><code>
+                    thisset = {"apple", "banana", "cherry", "apple"}<br>                    
+                    print(thisset)</p></code>
+                </article>
+            </section>
+
+
+            <section class="main-section" id="Python-Dictionaries">
+                <header>Python Dictionaries</header>
+                <article>
+                    <p>Dictionaries are used to store data values in key:value pairs.<br>
+                        A dictionary is a collection which is ordered*, changeable and does not allow duplicates.<br>
+                        As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.<br>                        
+                        Dictionaries are written with curly brackets, and have keys and values:<br>                        
+                        Example<br>
+                        Create and print a dictionary:<br>  <code>                      
+                        thisdict = {<br>
+                          "brand": "Ford",<br>
+                          "model": "Mustang",<br>
+                          "year": 1964<br>
+                        }<br>
+                        print(thisdict)</code></p>
+                        <header>
+                            Dictionary Items
+                        </header>
+                        <p>Dictionary items are ordered, changeable, and does not allow duplicates.<br>
+                            Dictionary items are presented in key:value pairs, and can be referred to by using the key name.</p>
+                        <p>Example<br>
+                            Print the "brand" value of the dictionary:<br><code>
+                            
+                            thisdict = {<br>
+                              "brand": "Ford",<br>
+                              "model": "Mustang",<br>
+                              "year": 1964<br>
+                            }<br>
+                            print(thisdict["brand"])</p></code>
+                        <header>Ordered or Unordered?</header>
+                        <p>As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.<br>
+
+                            When we say that dictionaries are ordered, it means that the items have a defined order, and that order will not change.<br>
+                            
+                            Unordered means that the items does not have a defined order, you cannot refer to an item by using an index.</p>
+                        <header>
+                            Changeable
+                        </header>
+                        <p>Dictionaries are changeable, meaning that we can change, add or remove items after the dictionary has been created.</p>
+                        <header>Duplicates Not Allowed</header>
+                        <p>Dictionaries cannot have two items with the same key:<br>
+
+                            Example<br>
+                            Duplicate values will overwrite existing values:<br><code>
+                            
+                            thisdict = {<br>
+                              "brand": "Ford",<br>
+                              "model": "Mustang",<br>
+                              "year": 1964,<br>
+                              "year": 2020<br>
+                            }<br>
+                            print(thisdict)</p>   </code>
+                </article>
+            </section>
+
+
+            <section class="main-section" id="Python-If-Else">
+                <header>
+                    Python If ... Else
+                </header>
+                <article>
+                    <header>
+                        If statement
+                    </header>
+                    <p>An "if statement" is written by using the if keyword.<br>
+
+                        Example<br>
+                        If statement:<br><code>
+                        
+                        a = 33<br>
+                        b = 200<br>
+                        if b > a:<br>
+                          print("b is greater than a")</p> </code>
+                    <p>
+                        In this example we use two variables, a and b, which are used as part of the if statement to test whether b is greater than a. As a is 33, and b is 200, we know that 200 is greater than 33, and so we print to screen that "b is greater than a".
+                    </p>
+                    <header>
+                        Indentation
+                    </header>
+                    <p>Python relies on indentation (whitespace at the beginning of a line) to define scope in the code. Other programming languages often use curly-brackets for this purpose.<br>
+
+                        Example<br>
+                        If statement, without indentation (will raise an error):<br><code>
+                        
+                        a = 33<br>
+                        b = 200<br>
+                        if b > a:<br>
+                        print("b is greater than a") # you will get an error</p></code>
+                        <header>Elif statement</header>
+                        <p>The elif keyword is pythons way of saying "if the previous conditions were not true, then try this condition".<br>
+
+                            Example<br><code>
+                            a = 33<br>
+                            b = 33<br>
+                            if b > a:<br>
+                              print("b is greater than a")<br>
+                            elif a == b:<br>
+                              print("a and b are equal")</p></code>
+                    <p>In this example a is equal to b, so the first condition is not true, but the elif condition is true, so we print to screen that "a and b are equal".</p>
+                    <header>Else statement</header>
+                    <p>The else keyword catches anything which isn't caught by the preceding conditions.<br>
+
+                        Example<br><code>
+                        a = 200<br>
+                        b = 33<br>
+                        if b > a:<br>
+                          print("b is greater than a")<br>
+                        elif a == b:<br>
+                          print("a and b are equal")<br>
+                        else:<br>
+                          print("a is greater than b")</p></code>
+                </article>
+            </section>
+
+            <section class="main-section" id="Python-Loops">
+                <header>Python Loops</header>
+                <article>
+                    <ul>
+                        <li>While Loop</li>
+                        <li>For Loop</li>
+                    </ul>
+                    <header>Python While Loops</header>
+                    <p>With the while loop we can execute a set of statements as long as a condition is true.<br>
+
+                        Example<br>
+                        Print i as long as i is less than 6:<br><code>
+                        
+                        i = 1<br>
+                        while i < 6:<br>
+                          print(i)<br>
+                          i += 1</p></code>
+                    <article>
+                        <header>The break Statement</header>
+                        <p>With the break statement we can stop the loop even if the while condition is true:<br>
+                            
+                            Example<br>
+                            Exit the loop when i is 3:<br><code>
+                            
+                            i = 1<br>
+                            while i < 6:<br>
+                              print(i)<br>
+                              if i == 3:<br>
+                                break<br>
+                              i += 1</p> </code>
+                            <header>The continue Statement</header>
+                            <p>With the continue statement we can stop the current iteration, and continue with the next:<br>
+
+                                Example<br>
+                                Continue to the next iteration if i is 3:<br><code>
+                                
+                                i = 0<br>
+                                while i < 6:<br>
+                                  i += 1<br>
+                                  if i == 3:<br>
+                                    continue<br>
+                                  print(i)</code>
+                                </p>
+                    </article>
+                    <header>Python for Loops</header>
+                    <article>
+                        <p>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).<br>
+                            
+                            This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.<br>
+                            
+                            With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.<br>
+                            
+                            Example<br><code>
+                            Print each fruit in a fruit list:<br>
+                            
+                            fruits = ["apple", "banana", "cherry"]<br>
+                            for x in fruits:<br>
+                              print(x)</p></code>
+                    </article>
+                </article>
+            </section>
+
+            <section class="main-section" id="Python-Functions">
+                <header>
+                    Python Fuctions
+                </header>
+                <article>
+                    <p>A function is a block of code which only runs when it is called.<br>
+
+                        You can pass data, known as parameters, into a function.<br>
+                        
+                        A function can return data as a result.
+                        
+                    </p>
+                    <header>Creating a Function</header>
+                    <p>In Python a function is defined using the def keyword:<br>
+
+                        Example<br><code>
+                        def my_function():<br>
+                          print("Hello from a function")</p></code>
+                    <header>Calling a Function</header>
+                    <p>To call a function, use the function name followed by parenthesis:<br>
+
+                        Example<br><code>
+                        def my_function():<br>
+                          print("Hello from a function")<br>
+                        
+                        my_function()</p></code>
+                </article>
+            </section>
+
+            <section class="main-section" id="Reference">
+                <header>Reference</header>
+                <article>
+                  <ul>
+                    <li>
+                      All the documentation in this page is taken from
+                      <a
+                        href="https://www.w3schools.com/python"
+                        target="_blank"
+                        >w3schools</a
+                      >
+                    </li>
+                  </ul>
+                </article>
+              </section>
+      </main>
+      
+</body>
+</html>
